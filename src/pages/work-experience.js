@@ -3,9 +3,10 @@ import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import './work-experience.css'
+import { graphql } from 'gatsby'
 
-const WorkExperiencePage = () => (
-  <Layout>
+const WorkExperiencePage = (props) => (
+  <Layout headshot={props.data.headshot}>
     <SEO title="Experience" />
     <div className={'exp-container'}>
       <div className={'header-row'}>
@@ -108,5 +109,17 @@ const WorkExperiencePage = () => (
     </div>
   </Layout>
 )
+
+export const query = graphql`
+  query {
+    headshot: file(relativePath: { eq: "headshot.jpg" }) {
+      childImageSharp {
+        fixed(width: 300, quality: 90) {
+          ...GatsbyImageSharpFixed
+        }
+      }
+    }
+  }
+`
 
 export default WorkExperiencePage

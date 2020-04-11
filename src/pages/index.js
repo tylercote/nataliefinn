@@ -5,15 +5,16 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import download_resume from '../downloads/NatalieFinn_Resume.pdf';
 
-import { library } from '@fortawesome/fontawesome-svg-core'
+import { library, config } from '@fortawesome/fontawesome-svg-core'
 import { faFile, faFolderOpen, faEnvelope } from '@fortawesome/free-regular-svg-icons'
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { graphql } from 'gatsby'
 
 library.add(faFile)
 
-const IndexPage = () => (
-  <Layout>
+const IndexPage = (props) => (
+  <Layout headshot={props.data.headshot}>
     <SEO title="About Me" />
     <h1><span className={'accent'}>Hi, I'm Natalie Finn...</span></h1>
     <p>
@@ -27,23 +28,35 @@ const IndexPage = () => (
     </p>
     <div className={'link-bar'}>
       <a className={'link-button'} href={'mailto:natalie.finn97@gmail.com'}>
-        <FontAwesomeIcon className={'icon'} icon={faEnvelope}/>
+        <FontAwesomeIcon className={'icon'} size={'lg'} icon={faEnvelope}/>
         natalie.finn97@gmail.com
       </a>
       <a className={'link-button'} href={download_resume} target={'_blank'}>
-        <FontAwesomeIcon className={'icon'} icon={faFile}/>
+        <FontAwesomeIcon className={'icon'} size={'lg'} icon={faFile}/>
         Resume
       </a>
       <a className={'link-button'} href={'#'} target={'_blank'}>
-        <FontAwesomeIcon className={'icon'} icon={faFolderOpen}/>
+        <FontAwesomeIcon className={'icon'} size={'lg'} icon={faFolderOpen}/>
         Portfolio
       </a>
       <a className={'link-button'} href={'https://www.linkedin.com/in/natalie-finn-7b63a4152/'} target={'_blank'}>
-        <FontAwesomeIcon className={'icon'} icon={faLinkedin}/>
+        <FontAwesomeIcon className={'icon'} size={'lg'} icon={faLinkedin}/>
         LinkedIn
       </a>
     </div>
   </Layout>
 )
+
+export const query = graphql`
+  query {
+    headshot: file(relativePath: { eq: "headshot.jpg" }) {
+      childImageSharp {
+        fixed(width: 300, quality: 90) {
+          ...GatsbyImageSharpFixed
+        }
+      }
+    }
+  }
+`
 
 export default IndexPage

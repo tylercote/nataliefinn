@@ -3,9 +3,10 @@ import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import './education.css';
+import { graphql } from 'gatsby'
 
-const EducationPage = () => (
-  <Layout>
+const EducationPage = (props) => (
+  <Layout headshot={props.data.headshot}>
     <SEO title="Education" />
     <div className={'container'}>
       <div className={'left-col'}>
@@ -49,5 +50,17 @@ const EducationPage = () => (
     </div>
   </Layout>
 )
+
+export const query = graphql`
+  query {
+    headshot: file(relativePath: { eq: "headshot.jpg" }) {
+      childImageSharp {
+        fixed(width: 300, quality: 90) {
+          ...GatsbyImageSharpFixed
+        }
+      }
+    }
+  }
+`
 
 export default EducationPage

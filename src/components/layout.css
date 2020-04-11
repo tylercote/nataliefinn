@@ -27,7 +27,7 @@ main {
 .layout {
   height: 100%;
   display: flex;
-  padding: 18px 48px 18px 48px;
+  padding: 18px 48px 18px 36px;
 
 }
 

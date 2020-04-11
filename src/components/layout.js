@@ -6,22 +6,13 @@
  */
 
 import React from "react"
-import PropTypes from "prop-types"
 import { useStaticQuery, graphql, Link } from "gatsby"
+import Img from "gatsby-image"
 
 import "./layout.css"
-import headshot from '../images/headshot.jpg';
 
-const Layout = ({ children }) => {
-  const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-    }
-  `)
+const Layout = ({children, headshot}) => {
+
 
   return (
     <>
@@ -53,7 +44,7 @@ const Layout = ({ children }) => {
         >
           <div className={'bio'}>
             <div className={'headshot-container'}>
-              <img className={'headshot'} src={headshot} alt={''}/>
+              <Img className={'headshot'} fixed={headshot.childImageSharp.fixed}/>
             </div>
           </div>
           <main>
@@ -65,10 +56,6 @@ const Layout = ({ children }) => {
       </div>
     </>
   )
-}
-
-Layout.propTypes = {
-  children: PropTypes.node.isRequired,
 }
 
 export default Layout
