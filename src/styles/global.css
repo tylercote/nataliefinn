@@ -1,4 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;800&display=swap');
+@media only screen and (max-width: 960px) {
+    .root {
+        height: unset;
+    }
+    .layout {
+        flex-direction: column;
+    }
+    header {
+        flex-direction: column;
+    }
+    p {
+        font-size: 10px;
+    }
+    .bio {
+        margin-bottom: 48px;
+    }
+    .nav-button > a {
+        font-size: 18px;
+    }
+    .link-button {
+        padding: 5px !important;
+        font-size: 14px !important;
+        margin-bottom: 16px;
+    }
+}
 
 html, body {
     background: #654ea3;  /* fallback for old browsers */
