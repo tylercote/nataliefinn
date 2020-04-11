@@ -9,8 +9,9 @@ import { library, config } from '@fortawesome/fontawesome-svg-core'
 import { faFile, faFolderOpen, faEnvelope } from '@fortawesome/free-regular-svg-icons'
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import "@fortawesome/fontawesome-svg-core/styles.css"
 import { graphql } from 'gatsby'
-
+config.autoAddCss = false
 library.add(faFile)
 
 const IndexPage = (props) => (
