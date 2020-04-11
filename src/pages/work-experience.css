@@ -1,0 +1,53 @@
+.exp-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.header-row {
+    display: flex;
+    width: 100%;
+    margin-bottom: 12px;
+}
+
+.body-row {
+    margin-bottom: 16px;
+}
+
+.hr-wrapper {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    padding-left: 32px;
+    padding-right: 32px;
+}
+
+hr {
+    flex: 1;
+    border-color: #ffa4a4;
+}
+
+.header {
+    flex-shrink: 1;
+    text-align: center;
+    color: #ffa4a4;
+}
+
+.clinical-table {
+    width: 100%;
+    padding-left: 32px;
+    padding-right: 32px;
+}
+
+.clinical-table td {
+    color: white;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+.date-col {
+    text-align: right;
+}
+
+.desc-col {
+    font-weight: bold;
+}
