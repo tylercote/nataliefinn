@@ -1,5 +1,5 @@
 import React from "react"
-
+import styles from './education.module.css';
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { graphql } from 'gatsby'
@@ -7,8 +7,8 @@ import { graphql } from 'gatsby'
 const EducationPage = (props) => (
   <Layout headshot={props.data.headshot}>
     <SEO title="Education" />
-    <div className={'container'}>
-      <div className={'left-col'}>
+    <div className={styles.container}>
+      <div className={styles.leftCol}>
         <h2>Simmons University</h2>
         <h3><i>Boston, MA</i></h3>
         <ul>
@@ -27,7 +27,7 @@ const EducationPage = (props) => (
           <li>Spanish Honors Society, Unified Olympics</li>
         </ul>
       </div>
-      <div className={'right-col'}>
+      <div className={styles.rightCol}>
         <h2>Certifications</h2>
         <ul>
           <li>Basic Life Support</li>

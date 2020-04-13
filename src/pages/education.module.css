@@ -1,0 +1,33 @@
+/** ---- EDUCATION ---- */
+.container {
+    display: flex;
+}
+
+.leftCol {
+    flex: 1;
+    padding-right: 24px;
+    /*border-right: 1px solid #2e6fb7;*/
+}
+
+.rightCol {
+    flex: 1;
+    padding-left: 24px;
+}
+
+ul {
+    margin-bottom: 48px;
+}
+
+@media only screen and (max-width: 960px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .leftCol {
+        padding-right: unset;
+    }
+
+    .rightCol {
+        padding-left: unset;
+    }
+}

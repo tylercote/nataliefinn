@@ -8,43 +8,44 @@
 import React from "react"
 import { useStaticQuery, graphql, Link } from "gatsby"
 import Img from "gatsby-image"
+import styles from './layout.module.css';
 
 const Layout = ({children, headshot}) => {
 
 
   return (
     <>
-      <div className={'root'}>
+      <div className={styles.root}>
         <header>
-          <div className={'name-container tracking-in-expand'}>
-            <span className={'first-name'}>NATALIE</span>
-            <span className={'last-name'}>FINN</span>
+          <div className={styles.nameContainer}>
+            <span className={styles.firstName}>NATALIE</span>
+            <span className={styles.lastName}>FINN</span>
           </div>
-          <div className={'links-container'}>
-            <span className="nav-button">
-              <Link className="nav-link" to="/" activeClassName={'active'}>About Me</Link>
+          <div className={styles.linksContainer}>
+            <span className={styles.navButton}>
+              <Link className={styles.navLink} to="/" activeClassName={styles.active}>About Me</Link>
             </span>
-            <span className="nav-button">
-              <Link className="nav-link" to="/education" activeClassName={'active'}>Education</Link>
+            <span className={styles.navButton}>
+              <Link className={styles.navLink} to="/education" activeClassName={styles.active}>Education</Link>
             </span>
-            <span className="nav-button">
-              <Link className="nav-link" to="/work-experience" activeClassName={'active'}>Experience</Link>
+            <span className={styles.navButton}>
+              <Link className={styles.navLink} to="/work-experience" activeClassName={styles.active}>Experience</Link>
             </span>
-            <span className="nav-button">
-              <Link className="nav-link" to="/quality-initiatives" activeClassName={'active'}>Quality Initiatives</Link>
+            <span className={styles.navButton}>
+              <Link className={styles.navLink} to="/quality-initiatives" activeClassName={styles.active}>Quality Initiatives</Link>
             </span>
           </div>
         </header>
         <div
-          className={'layout'}
+          className={styles.layout}
         >
-          <div className={'bio'}>
-            <div className={'headshot-container'}>
-              <Img className={'headshot'} fixed={headshot.childImageSharp.fixed}/>
+          <div className={styles.bio}>
+            <div className={styles.headshotContainer}>
+              <Img className={styles.headshot} fixed={headshot.childImageSharp.fixed}/>
             </div>
           </div>
           <main>
-            <div className={'tab-content slide-in-fwd-center'}>
+            <div className={[styles.tabContent, styles.slideInFwdCenter]}>
               {children}
             </div>
           </main>

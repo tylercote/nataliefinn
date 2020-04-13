@@ -3,7 +3,7 @@ import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import download_resume from '../downloads/NatalieFinn_Resume.pdf';
-
+import styles from './index.module.css';
 import { library, config } from '@fortawesome/fontawesome-svg-core'
 import { faFile, faFolderOpen, faEnvelope } from '@fortawesome/free-regular-svg-icons'
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
@@ -26,21 +26,21 @@ const IndexPage = (props) => (
       &nbsp;&nbsp;&nbsp;&nbsp;
       Further on in my nursing education, I gained the words to describe the feeling I had during that discharge; patient-centered care. The scientist in me is intrigued by the pathophysiology of the illnesses I will care for but I am most concerned with holistically caring for my patients. This comes from listening to their needs that expand beyond the physical ailments that brought a patient to the hospital. Throughout all my clinical experiences, the greatest satisfaction I have felt is from empowering patients in their ability to heal. The nurses supported that mother as she was about to care for her newborn outside of the hospital setting. I have helped patients walk for the first time after a lung transplant and enabled them to breathe better than they have their whole life. My ability to connect with the patients emotionally and tend to their health concerns is what will serve me in my future nursing practice.
     </p>
-    <div className={'link-bar'}>
-      <a className={'link-button'} href={'mailto:natalie.finn97@gmail.com'}>
-        <FontAwesomeIcon className={'icon'} size={'lg'} icon={faEnvelope}/>
+    <div className={styles.linkBar}>
+      <a className={styles.linkButton} href={'mailto:natalie.finn97@gmail.com'}>
+        <FontAwesomeIcon className={styles.icon} size={'lg'} icon={faEnvelope}/>
         natalie.finn97@gmail.com
       </a>
-      <a className={'link-button'} href={download_resume} target={'_blank'}>
-        <FontAwesomeIcon className={'icon'} size={'lg'} icon={faFile}/>
+      <a className={styles.linkButton} href={download_resume} target={'_blank'}>
+        <FontAwesomeIcon className={styles.icon} size={'lg'} icon={faFile}/>
         Resume
       </a>
-      <a className={'link-button'} href={'#'} target={'_blank'}>
-        <FontAwesomeIcon className={'icon'} size={'lg'} icon={faFolderOpen}/>
+      <a className={styles.linkButton} href={'#'} target={'_blank'}>
+        <FontAwesomeIcon className={styles.icon} size={'lg'} icon={faFolderOpen}/>
         Portfolio
       </a>
-      <a className={'link-button'} href={'https://www.linkedin.com/in/natalie-finn-7b63a4152/'} target={'_blank'}>
-        <FontAwesomeIcon className={'icon'} size={'lg'} icon={faLinkedin}/>
+      <a className={styles.linkButton} href={'https://www.linkedin.com/in/natalie-finn-7b63a4152/'} target={'_blank'}>
+        <FontAwesomeIcon className={styles.icon} size={'lg'} icon={faLinkedin}/>
         LinkedIn
       </a>
     </div>

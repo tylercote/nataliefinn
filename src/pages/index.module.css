@@ -1,0 +1,35 @@
+/* ---- ABOUT ME --- */
+
+.linkBar {
+    margin-top: 36px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.linkButton {
+    font-size: 18px;
+    border-radius: 5px;
+    color: white;
+    background-color: #343a47;
+    border: 1px solid grey;
+    padding: 8px 12px 8px 12px;
+    text-decoration: none;
+}
+
+.linkButton:hover {
+    background-color: #474f5e;
+}
+
+.icon {
+    margin-right: 10px;
+}
+
+@media only screen and (max-width: 960px) {
+    .linkBar {
+        flex-direction: column;
+    }
+    .linkButton {
+        font-size: 14px;
+        margin-bottom: 16px;
+    }
+}

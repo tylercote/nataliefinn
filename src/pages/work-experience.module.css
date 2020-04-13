@@ -1,0 +1,73 @@
+/** ---- EXPERIENCE ---- */
+.expContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.headerRow {
+    display: flex;
+    width: 100%;
+    margin-bottom: 12px;
+}
+
+.bodyRow {
+    margin-bottom: 16px;
+}
+
+.hrWrapper {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    padding-left: 32px;
+    padding-right: 32px;
+}
+
+hr {
+    flex: 1;
+}
+
+.header {
+    flex-shrink: 1;
+    text-align: center;
+    color: #2e6fb7;
+}
+
+.clinicalTable {
+    width: 100%;
+    padding-left: 32px;
+    padding-right: 32px;
+}
+
+.clinicalTable td {
+    color: black;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+.dateCol {
+    text-align: right;
+}
+
+.locCol {
+
+}
+
+.descCol {
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 960px) {
+    /*Experience*/
+    .clinicalTable {
+        padding: 0;
+    }
+
+    .clinicalTable td {
+        font-size: 12px;
+    }
+
+    .hrWrapper {
+        padding-right: 14px;
+        padding-left: 14px;
+    }
+}
