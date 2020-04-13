@@ -2,7 +2,6 @@
 
 @media only screen and (max-width: 960px) {
     .root {
-        height: unset;
     }
     .layout {
         padding: 18px 36px 18px 28px !important;
@@ -47,6 +46,7 @@
         margin-bottom: 16px;
     }
     header {
+        height: 100px !important;
         padding: 8px 12px 8px 12px !important;
     }
     .name-container {
