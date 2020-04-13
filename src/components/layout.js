@@ -9,8 +9,6 @@ import React from "react"
 import { useStaticQuery, graphql, Link } from "gatsby"
 import Img from "gatsby-image"
 
-import "./layout.css"
-
 const Layout = ({children, headshot}) => {
 
 
