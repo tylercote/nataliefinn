@@ -26,7 +26,7 @@ main {
 
 .layout {
     display: flex;
-    padding: 24px 48px 18px 36px;
+    padding: 20px 48px 18px 36px;
 }
 
 .bio {
@@ -222,7 +222,6 @@ main {
     .layout {
         padding: 18px 36px 18px 28px;
         flex-direction: column-reverse;
-        height: unset;
     }
     header {
         flex-direction: column;
