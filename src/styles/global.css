@@ -46,7 +46,7 @@
         margin-bottom: 16px;
     }
     header {
-        height: 100px !important;
+        height: 110px !important;
         padding: 8px 12px 8px 12px !important;
     }
     .name-container {
@@ -364,4 +364,31 @@ main {
         opacity: 1;
     }
 }
+
+/* ---- ABOUT ME --- */
+
+.link-bar {
+    margin-top: 36px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.link-bar > a {
+    font-size: 18px;
+    border-radius: 5px;
+    color: white;
+    background-color: #343a47;
+    border: 1px solid grey;
+    padding: 8px 12px 8px 12px;
+    text-decoration: none;
+}
+
+.link-bar > a:hover {
+    background-color: #474f5e;
+}
+
+.icon {
+    margin-right: 10px;
+}
+
 
