@@ -39,8 +39,6 @@ const Layout = ({children, headshot}) => {
         </header>
         <div
           className={'layout'}
-          style={{
-          }}
         >
           <div className={'bio'}>
             <div className={'headshot-container'}>

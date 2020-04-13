@@ -17,7 +17,7 @@ library.add(faFile)
 const IndexPage = (props) => (
   <Layout headshot={props.data.headshot}>
     <SEO title="About Me" />
-    <h1><span className={'accent'}>Hi, I'm Natalie Finn...</span></h1>
+    <h1><span className={'accent'}><span className={'hi'}>Hi,</span> I'm Natalie Finn...</span></h1>
     <p>
       &nbsp;&nbsp;&nbsp;&nbsp;The summer before my senior year in high school I accepted a volunteer position at Boston Children’s Hospital. It was through this work that I experienced first hand the intimate relationship between nurses, patients, and families.
       It seemed second nature for these nurses to guide families with knowledge, humor, and confidence. I was deeply moved to see the joy parents felt when they were able to take their children home.

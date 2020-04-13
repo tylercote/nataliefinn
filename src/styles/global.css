@@ -1,28 +1,95 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;800&display=swap');
+
 @media only screen and (max-width: 960px) {
     .root {
         height: unset;
     }
     .layout {
+        padding: 18px 26px 18px 18px !important;
         flex-direction: column;
+        height: unset !important;
+    }
+    h1 {
+        font-size: 22px !important;
+    }
+    h2 {
+        font-size: 16px !important;
+    }
+    h3 {
+        font-size: 14px !important;
     }
     header {
         flex-direction: column;
     }
+    li {
+        font-size: 14px !important;
+    }
     p {
-        font-size: 10px;
+        font-size: 14px !important;
     }
     .bio {
         margin-bottom: 48px;
+        padding: 0 !important;
+        display: none;
     }
     .nav-button > a {
-        font-size: 18px;
+        font-size: 14px;
+    }
+    .nav-button {
+        flex: 1;
+        text-align: center;
+    }
+    .link-bar {
+        flex-direction: column !important;
     }
     .link-button {
-        padding: 5px !important;
         font-size: 14px !important;
         margin-bottom: 16px;
     }
+    header {
+        padding: 8px 12px 8px 12px !important;
+    }
+    .name-container {
+        text-align: center !important;
+    }
+    .first-name {
+        font-size: 38px !important;
+    }
+    .last-name {
+        font-size: 38px !important;
+        margin-right: 0 !important;
+    }
+    .hi {
+        display: block;
+    }
+
+    /*Education*/
+    .container {
+        flex-direction: column !important;
+    }
+
+    .left-col {
+        padding-right: unset !important;
+    }
+
+    .right-col {
+        padding-left: unset !important;
+    }
+
+    /*Experience*/
+    .clinical-table {
+        padding: 0 !important;
+    }
+
+    .clinical-table td {
+        font-size: 12px !important;
+    }
+
+    .hr-wrapper {
+        padding-right: 14px !important;
+        padding-left: 14px !important;
+    }
+
 }
 
 html, body {
@@ -34,15 +101,19 @@ html, body {
     -webkit-text-size-adjust: 100%;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    margin: 0;
+    overflow-x: hidden;
 }
 
 html, body, #___gatsby {
+    margin: 0;
+    padding: 0;
+    width: 100%;
     height: 100%;
 }
 
 #___gatsby > div {
     height: 100%;
+    width: 100%;
 }
 h1 {
     color: white;

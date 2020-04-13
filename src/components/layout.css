@@ -1,12 +1,12 @@
 .root {
   display: flex;
   height: 100%;
+  width: 100%;
   flex-direction: column;
 }
 
 header {
   display: flex;
-  /*background-color: #1c1a37;*/
   background-color: #1b1b1b;
   padding: 20px 48px 20px 48px;
 }
