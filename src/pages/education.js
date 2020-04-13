@@ -41,7 +41,7 @@ const EducationPage = (props) => (
           <li>Epic</li>
           <li>Microsoft Office Suite</li>
           <li>RedCap</li>
-          <li>EIAS</li>
+          <li>ERAS® Interactive Audit System - EIAS</li>
           <li>WordPress</li>
           <li>Vizient</li>
         </ul>
