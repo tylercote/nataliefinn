@@ -391,4 +391,79 @@ main {
     margin-right: 10px;
 }
 
+/** ---- EDUCATION ---- */
+.container {
+    display: flex;
+}
+
+.left-col {
+    flex: 1;
+    padding-right: 24px;
+    /*border-right: 1px solid #ffa4a4;*/
+}
+
+.right-col {
+    flex: 1;
+    padding-left: 24px;
+}
+
+ul {
+    margin-bottom: 48px;
+}
+
+/** ---- EXPERIENCE ---- */
+.exp-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.header-row {
+    display: flex;
+    width: 100%;
+    margin-bottom: 12px;
+}
+
+.body-row {
+    margin-bottom: 16px;
+}
+
+.hr-wrapper {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    padding-left: 32px;
+    padding-right: 32px;
+}
+
+hr {
+    flex: 1;
+    border-color: #ffa4a4;
+}
+
+.header {
+    flex-shrink: 1;
+    text-align: center;
+    color: #ffa4a4;
+}
+
+.clinical-table {
+    width: 100%;
+    padding-left: 32px;
+    padding-right: 32px;
+}
+
+.clinical-table td {
+    color: white;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+.date-col {
+    text-align: right;
+}
+
+.desc-col {
+    font-weight: bold;
+}
+
 
