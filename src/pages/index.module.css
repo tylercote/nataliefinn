@@ -16,7 +16,7 @@
     text-decoration: none;
 }
 
-.linkButton:hover {
+.linkButton:hover, .linkButton:active {
     background-color: #474f5e;
 }
 

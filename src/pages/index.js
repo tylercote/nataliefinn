@@ -35,10 +35,10 @@ const IndexPage = (props) => (
         <FontAwesomeIcon className={styles.icon} size={'lg'} icon={faFile}/>
         Resume
       </a>
-      <a className={styles.linkButton} href={'#'} target={'_blank'}>
-        <FontAwesomeIcon className={styles.icon} size={'lg'} icon={faFolderOpen}/>
-        Portfolio
-      </a>
+      {/*<a className={styles.linkButton} href={'#'} target={'_blank'}>*/}
+      {/*  <FontAwesomeIcon className={styles.icon} size={'lg'} icon={faFolderOpen}/>*/}
+      {/*  Portfolio*/}
+      {/*</a>*/}
       <a className={styles.linkButton} href={'https://www.linkedin.com/in/natalie-finn-7b63a4152/'} target={'_blank'}>
         <FontAwesomeIcon className={styles.icon} size={'lg'} icon={faLinkedin}/>
         LinkedIn
